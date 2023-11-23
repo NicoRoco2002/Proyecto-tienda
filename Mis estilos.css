@@ -1,0 +1,328 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+a:hover{
+    color: rgb(64, 64, 64);
+}
+
+@media (max-width: 1200px){
+    body{
+
+        width: 1440px;
+    }
+}
+
+
+::-webkit-scrollbar{
+
+    max-width: 20px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(green,greenyellow);
+    border-radius: 20px;
+}
+
+
+/*------------------ COMIENZA EL HEADER------------------------------------------*/
+body header{
+    height: 150px;
+    background-size: cover;
+    background: linear-gradient(green,greenyellow);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+body header logo{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin-right: 1100px;
+}
+
+
+body header medio{
+    position: absolute;
+    width: 1000px;
+    height: 150px;
+    margin-left: 100px;    
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+body header medio busqueda{
+    position: absolute;
+    height: 42px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+body header medio busqueda icono{
+    display: flex;
+    justify-content: flex-end;
+}
+body header medio busqueda:hover{
+    cursor:text;
+}
+
+body header medio anteriores{
+    height: 100px;
+    width: 100%;
+
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+body header medio anteriores enlases a{
+    margin: 30px;
+}
+
+body header carrito{
+    height: 150px;
+    width: 150px;
+
+    margin-left: 1190px;
+    
+}
+
+
+.LUPA{
+
+    height: 32px;
+    margin-top: 6px;
+    margin-right: 15px;
+    
+
+}
+.LOGO{
+    height: 130px;
+    margin-top:8px;
+}
+.CARRITO{
+    height: 34px;
+    margin-top: 10px;
+}
+
+
+
+/*------------------ EMPIEZA EL MAIN------------------------------------------*/
+
+body main{
+    height: 1760px;
+    background-size: cover;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/*--------menu categorias-----------*/
+
+body main menu_categorias{
+    
+    height: 50px;
+
+    top: -16px;
+    position: absolute;
+    display: flex;
+    margin-right: 900px;
+    position: absolute;
+    
+}
+body main menu_categorias *{
+    list-style: none;
+}
+body main menu_categorias ul li caja ul *{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 5px;
+    height: 20px;
+    width: 200px;
+    border-radius: 20px;
+    
+}
+
+
+
+body main menu_categorias ul li:hover caja{
+    display: block;
+}
+body main menu_categorias ul li caja{
+    display: none;
+}
+.title{
+    background: rgba(255,255, 255, 0.5);
+    width: 250px;
+    padding-left: 50px;
+    margin: 0;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 5px 10px black;
+
+
+}
+body main menu_categorias ul li caja ul>li:hover{
+    background-color: white;
+}
+
+
+
+
+ /*---------primero---------*/
+
+body main primero{
+    background-image: url(./Recursos/IMG/main/Primero/playa\ 1.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 800px;
+  
+    display: flex;
+    justify-content: center;
+
+}
+body main primero ofertas{
+    height: 500px;
+    width: 500px;
+    align-self: center;
+    background-size: cover;
+    margin: 25px;
+    overflow: hidden;
+    border-radius: 60px;
+    box-shadow: 0 0 15px black;
+    
+}
+body main primero a img{
+    height: 500px;
+    width: 500px;
+    transition: transform 0.2s ;
+}
+body main primero a img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*--------segundo------------*/
+
+body main segundo{
+    display: flex;
+    flex-direction: column;
+}
+body main segundo>*{
+
+    height: 300px;
+    width: 1200px;
+    background-color: whitesmoke;
+    margin: 20px;
+
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    align-items:flex-end;
+
+}
+
+body main segundo a{
+
+    height: 190px;
+    width: 190px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    transition: transform 0.2s ;
+}
+body main segundo a:hover{
+    transform: scale(1.01);
+}
+
+body main segundo img{
+    max-height: 190px;
+    max-width: 190px;
+    border-radius: 20px; 
+}
+
+
+body main segundo h2{
+    position: absolute;
+    align-self: baseline;
+    margin-left: 30px;
+}
+body main segundo ::-webkit-scrollbar-thumb{
+    background: rgba(138,221,45,0.4);
+}
+body main segundo ::-webkit-scrollbar{
+    width: 10px;
+    height: 20px;  
+}
+body main segundo ::-webkit-scrollbar-button{
+    width: 20px;
+} 
+
+
+/*------------------ COMIENZA EL FOOTER------------------------------------------*/
+
+body footer{
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(green,greenyellow);
+    display:flex;
+    justify-content: center;
+
+}
+body footer>*{
+
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body footer img{
+    height: 75px;
+    width: 75px;
+    transition: transform 0.1s ;    
+}
+body footer img:hover{
+    transform: scale(1.05);
+}
+body footer servicio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body footer categorias>ul{
+    list-style: none;
+}
+body footer redes{
+    display: flex;
+    justify-content: space-around;
+
+}
+body footer redes a{
+    height: 75px;
+    width: 75px;    
+}
